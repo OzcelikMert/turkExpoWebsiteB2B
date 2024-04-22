@@ -1,0 +1,110 @@
+.company-image{display: inline-block; background: transparent;}
+.edit-profile {float: right;padding: 8px;border-radius: 2px;transition: 0.5s; margin: 0 !important;margin-top:10px !important;}
+.banner {width: 100%;height: 100%;background: rgba(0, 0, 0, 0.33);position: fixed;z-index: 9999;top: 0;display: none;left: 0;}
+.banner-center {width: 850px;height: 300px;background: rgb(232, 232, 232);display: block;margin: 0 auto;position: absolute;top: 100px;left: calc(50% - 450px);border: 2px solid #e0e0e0;}
+.banner-header{height: 50px; background: white; border-bottom: 2px solid rgb(209, 209, 209);}
+.banner-header h4 {line-height: 46px;margin-left: 20px;color: #222;font-size: 18px; display: inline;}
+.banner-select{width: 800px; height: 200px; border:4px dashed  gray;display: block; margin: 10px auto;}
+.banner-select a{text-align: center;line-height: 140px;color: brown;font-size: 20px;display: block;}
+.profile-right-button select {background: #eaf3f0;padding: 5px;border: 0;overflow: hidden;border-radius: 5px;outline: none; user-select: none;font-size: 14px;float: right;}
+.buttons-profile{display: block;margin-top: 84px;}
+.button{text-decoration: none !important;}
+.button-blue-v1{padding: 10px 15px;border: 0;background: rgb(66, 133, 244);color: white;font-size: 15px;float: right;border-radius: 5px;margin: 0 5px;}
+.button-blue-v1:hover{background: rgb(114, 164, 243);color: rgb(32, 32, 32);transition: 0.5s;}
+.pad-10-15{padding: 10px 15px;}
+.pad-5-15{padding: 5px 15px !important;}
+.button-green-v1 {padding: 10px 15px;border: 0;background: rgb(12, 188, 35);color: white;font-size: 15px;float: right;border-radius: 5px;margin: 8px 5px;}
+.button-green-v1:hover{background: rgb(69, 253, 93);color: #222;transition: 0.5s;}
+.button-red-v1 {padding: 10px 15px;border: 0;background: rgb(202, 20, 20);color: white;font-size: 15px;float: right;border-radius: 5px;margin: 8px 5px;}
+.button-red-v1:hover{background: rgb(253, 45, 45);color: #222;transition: 0.5s;}
+.lang_edit select{background: #eaf3f0;padding: 12px 15px;border: 0;overflow: hidden;border-radius: 5px;outline: none;user-select: none;font-size: 15px;margin: 0;}
+.lang_edit{display: inline-block;float: right;}
+
+
+/*# --------------------------------------- #*/
+/*#              LISENCE PAGE               #*/
+/*# --------------------------------------- #*/
+
+
+.card{
+    box-shadow: 0 0 black !important;
+}
+.lisence{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #bababa;
+}
+
+.lisence .iban h4{
+    display: inline-block;
+    padding-right: 12px;
+}
+.lisence .iban input[type="text"]{
+    font-size: 25px;
+    background: #eeeeee;
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    width: 100%;
+}
+
+.lisence .iban a{
+    font-size: 34PX;
+    color: #222;
+    position: absolute;
+    right: 32px;
+    margin-top: 4px;
+}
+
+#eft-reg{
+    font-size: 18px;
+    background: #cd0e0e;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: white;
+}
+#eft-noreg{
+    font-size: 18px;
+    background: #e07015;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 5px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-body{
+        padding: 1rem;
+    }
+
+    .lisence .iban input[type="text"] {
+        font-size: 13px;
+        background: #eeeeee;
+        padding: 6px;
+        border-radius: 10px;
+        width: auto;
+        display: inline-block;
+        border: 1px solid #d2d2d2;
+        width: 100%;
+    }
+
+    .lisence .iban a {
+        font-size: 20PX;
+        color: #222;
+        position: absolute;
+        right: 30px;
+        margin-top: 2px;
+    }
+
+    .lisence .img img {
+        width: 100%;
+    }
+    .lisence .iban h4 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,48 @@
+.cropArea {
+    background: #E4E4E4;
+    width:550px;
+    height:550px;
+    display: block;
+    margin: 0 auto;
+}
+.bg-full-black{position: fixed; background: rgba(0, 0, 0, 0.239); top: 0px; left: 0; width: 100%; height: 100%; z-index: 99999; display: none;}
+#e-i{    
+  width:128px;
+  height:128px;
+  border: 3px solid #0000002e;
+  margin: 10px;
+}
+#e-i2{    
+  width:256px;
+  height:256px;
+  border: 3px solid #0000002e;
+  margin: 10px;
+}
+.edit-img{display: none;background: #e4e4e4;width: 700px;height: 650px;animation: 0.4s up_down;position: fixed;z-index: 9999;top: 50%;left: 50%;margin-left: -350px;margin-top: -325px;box-shadow: 0px 0px 20px 11px #00000063;border-radius: 10px 10px 0px 0px;}
+.select-the-image{    width: 100%;padding: 20px 0px;background: #465ef2;border: 0px;display: block;float: left;color: white;font-size: 18px;margin-top: -73px;border-radius: 10px 10px 0px 0px;text-align: center;}
+.save_btn{margin-top: 5px;padding: 5px 20px;background: #d84a19;display: block;float: right;color: white;font-size: 18px;margin-right: 10px;border: 0;}
+.cancel_btn{margin-top: 5px;text-decoration: none;padding: 5px 20px;background: #0cc886;display: block;float: right;color: white;font-size: 18px;margin-right: 10px;border: 0;}
+#crop_image_text{display: none;}
+#mobile_name{display: none;}
+
+  @media only screen and (max-width: 500px) {
+  .content-wrapper{ padding: 0px; }
+  .col-lg-2,.col-lg-2.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6, .col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{padding: 0px;}
+  .table td{padding: 2px;}
+  .cropArea {background: #E4E4E4;width:300px;height:300px;display: block;margin: 0 auto }
+  .select-the-image{width: 100%;}
+  .edit-img{display: none;background: #e4e4e4;width: 360px;height: 450px;animation: 0.4s up_down_mobile;position: fixed;z-index: 9999;top: 50%;left: 50%;margin-left: -180px;margin-top: -225px;box-shadow: 0px 0px 20px 11px #00000063;border-radius: 10px 10px 0px 0px;}
+  .card .card-body {padding:5px 10px;}
+  .company-image{width: 100%;}
+}
+@keyframes up_down {
+  from {margin-left: 1500px;}
+  to {  top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -325px;}
+}
+@keyframes up_down_mobile {
+  from {margin-left: 1500px;}
+  to {top: 50%;left: 50%;margin-left: -180px;margin-top: -225px;}
+}

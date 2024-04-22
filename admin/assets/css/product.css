@@ -1,0 +1,31 @@
+.product {width: 200px;border: 2px solid #272727a8 !important;border-radius: 2px;display: block;margin: 15px;box-shadow: 0px 0px 6px #00000038;padding: 15px 0px;float: left;background: white;}
+
+.product:hover{transition: 0.4s; box-shadow: 0px 0px 12px #0000007a; }
+
+.product-alt{width: 160px;display: block; margin:0 auto;}
+
+.product-alt img{width: 160px;display: block;margin: 0 auto;border-radius: 5px;}
+
+.product-alt span{width: 160px;display: block; text-align: center;padding: 10px;  padding-bottom: 0px;}
+
+#min-date{width: 160px;display: block; text-align: center;padding: 0px; font-size: 11px; } 
+
+.btn-edit {background: #4285F4;width: 75px;border: 0px;padding: 5px 10px;color: white;display: inline-block;border-radius: 2px;}
+
+.btn-delete {background: #DB4437;width: 75px;border: 0px;padding: 5px 10px;color: white;display: inline-block;margin-left: 10px;border-radius: 2px;}
+
+.btn-edit:hover{transition: .4s;background: #013468;color: white;}
+
+.btn-delete:hover{transition: .4s;background: #940303;color: white;}
+
+.product-add-image{width: 160px;height: 128px;background-repeat: no-repeat !important;background: center;background-size: contain;display: inline-block;}
+
+.product-slider-image{display: inline-block;height: auto;width: 160px;margin-right: 15px;margin-bottom: 15px;}
+
+.addimageicon {background-image: url(../../../images/addimageicon.png) !important;background-repeat: no-repeat !important;background-size: contain !important;width: 200px;height: 200px;background: #d9d9d94f;border-radius: 5px;border: 2px solid #c2c2c29e;}
+
+.addimageicon:hover{transition: 0.7s;}
+
+
+
+#lang_edit {background: #eaf3f0;padding: 5px;border: 0;overflow: hidden;border-radius: 5px;outline: none; user-select: none;font-size: 14px;float: right;}

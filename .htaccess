@@ -1,0 +1,62 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+#RewriteBase https://www.mcdev.ozceliksoftware.com
+
+RewriteRule ^(css|images|js|fonts) - [L]
+
+
+RewriteRule ^home/([0-9a-zA-Z-_]+)$ index.php?lang=$1 [L,QSA]
+RewriteRule ^home/([0-9a-zA-Z-_]+)/$ index.php?lang=$1 [L,QSA]
+RewriteRule ^profile.php/([0-9a-zA-Z-_]+)$ profile.php?id=$1 [L,QSA]
+RewriteRule ^profile.php/([0-9a-zA-Z-_]+)/$ profile.php?id=$1 [L,QSA]
+RewriteRule ^profile.php/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ profile.php?id=$1&page=$2 [L,QSA]
+RewriteRule ^profile.php/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ profile.php?id=$1&page=$2 [L,QSA]
+RewriteRule ^profile.php/([0-9a-zA-Z-_]+)/product/([0-9a-zA-Z-_]+)$ profile.php?id=$1&page=view&product_id=$2 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)$ profile.php?company_name=$1 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)/$ profile.php?company_name=$1 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ profile.php?company_name=$1&page=$2 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ profile.php?company_name=$1&page=$2 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ profile.php?company_name=$1&page=$2&product_id=$3 [L,QSA]
+RewriteRule ^profile/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/$ profile.php?company_name=$1&page=$2&product_id=$3 [L,QSA]
+RewriteRule ^category/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)/$ category.php?category=$1&lang=$2 [L,QSA]
+RewriteRule ^category/([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ category.php?category=$1&lang=$2 [L,QSA]
+RewriteRule ^category/([0-9a-zA-Z-_]+)/$ category.php?category=$1&lang=en [L,QSA]
+RewriteRule ^category/([0-9a-zA-Z-_]+)$ category.php?category=$1&lang=en [L,QSA]
+RewriteRule ^category/$ category.php?lang=en [L,QSA]
+RewriteRule ^category$ category.php?$lang=en [L,QSA]
+RewriteRule ^search/([0-9a-zA-Z-_]+)/(.*)$ search.php?main_category=$1&sub_category=$2 [L,QSA]
+RewriteRule ^search/([0-9a-zA-Z-_]+)/(.*)/$ search.php?main_category=$1&sub_category=$2 [L,QSA]
+RewriteRule ^search/([0-9a-zA-Z-_]+)/(.*)/(.*)$ search.php?main_category=$1&sub_category=$2&lang=$3 [L,QSA]
+RewriteRule ^search/([0-9a-zA-Z-_]+)/(.*)/(.*/)$ search.php?main_category=$1&sub_category=$2&lang=$3 [L,QSA]
+RewriteRule ^admin/profile/([0-9a-zA-Z-_]+)$  ./admin/profile.php?lang=$1 [L,QSA]
+RewriteRule ^admin/profile/([0-9a-zA-Z-_]+)/$  ./admin/profile.php?lang=$1 [L,QSA]
+
+RewriteRule ^blog/([0-9a-zA-Z-_]+)/$  ./blog.php?blog=$1 [L,QSA]
+RewriteRule ^blog/([0-9a-zA-Z-_]+)$  ./blog.php?blog=$1 [L,QSA]
+
+
+
+
+
+<IfModule mod_headers.c>    
+    Header set Access-Control-Allow-Origin *
+</IfModule>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
